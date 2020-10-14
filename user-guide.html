@@ -1,0 +1,629 @@
+<!--
+FiSS v. 3.0
+FiSS is a CSS library based on the Fibonacci Sequence
+Email: mail@matteobersani.com
+Project page: http://matteobersani.com/projects/fiss
+
+MIT License
+
+Copyright 2019-2020 Matteo Giuseppe Bersani
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+<html>
+
+	<head>
+
+		<title>FiSS - User guide</title>
+
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="FiSS is a CSS library based on the Fibonacci Sequence and Golden Ratio. It provides common classes for margins and  paddings and different font sizes based on the Golden Ratio. ">
+		<meta name="keywords" content="Fibonacci Sequence CSS Library">
+
+		<link rel="stylesheet" href="fiss.3.0.min.css" type="text/css" media="screen">
+
+		<style type="text/css" media="screen">
+			a,a:link,a:visited{color:#ff6600;text-decoration:underline;}
+			a:hover{text-decoration:none;}
+			button{border:1px solid #000;cursor:pointer;}
+			.download-button{background:#ff6600;}
+			.container{max-width:987px;margin-right:auto;margin-left:auto;font-family:'Montserrat';font-weight:normal;}
+			.license{border-top:1px solid #999;}
+		</style>
+
+		<link rel="icon" href="http://matteobersani.com/favicon.ico">
+
+	</head>
+
+	<a neme="top"></a>
+
+	<body class="m0 p0 b-white t-black f-size-1-normal">
+
+		<div class="container p21 m21-tb">
+
+			<div class="d-block t-right">
+				<a href="#userguide">User guide</a> | 
+				<a href="#changelog">Changelog</a> | 
+				<a href="http://matteobersani.com">Contact</a>
+			</div>
+
+			<div class="d-block m34-t"><h1 class="f-size-1-title">FiSS v. 3.0</h1></div>
+
+			<div class="d-block">
+
+				<p>
+					FiSS is a <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS</a> library based on the <a href="https://en.wikipedia.org/wiki/Fibonacci_number" target="_blank">Fibonacci sequence</a>.<br>
+					There are also some generic classes like text alignment, colors and responsive classes.<br>
+					The .zip file contains a minified version and .less version.<br>
+					Library under <a href="https://opensource.org/licenses/MIT">MIT Licenses</a>.<br>
+				</p>
+
+				<p>
+					To use it you have to load the library in your html page:<br>
+				</p>
+
+				<p class="b-gray p13">
+					&lt; link href="fiss.min.css" rel="stylesheet" &gt;
+				</p>
+
+				<p>
+					Done, you can use it:
+				</p>
+
+				<p class="b-gray p13">
+					&lt; div class="fiss-class-here" &gt; your content here &lt; /div &gt;
+				</p>
+
+				<p>
+					A copy of the following user guide is available in the download file.
+				</p>
+
+			</div>
+
+			<div class="d-block">
+
+				<a name="userguide"></a>
+				<h1 class="f-size-1-big m34-tb">USER GUIDE <span class="small f-size-1-small">(<a href="#top">Top</a>)</span></h1>
+
+				<p class="f-bold f-size-1-big m34-tb">Fibonacci classes</p>
+
+				<p class="f-bold t-red">Margin:</p>
+
+				<p>
+					<div class="b-gray p13 m13-b">
+						<strong>Classes</strong>: .mX, .mX-t, .mX-r, .mX-b, .mX-l, .mX-tb, .mX-rl<br>
+						<strong>Sizes</strong>: Replace 'X' with one of this numebers: 0,1,2,3,5,8,13,21,34,55,89,144,233.<br>
+					</div>
+				</p>
+
+				<p class="f-bold">
+					Description:<br>
+				</p>
+				<p>
+					.mX : provide a margin of X px on every side (top,right,bottom,left) of the element.<br>
+					.mX-t : provide a margin of X px on the top of the element.<br>
+					.mX-r : provide a margin of X px on the right of the element.<br>
+					.mX-b : provide a margin of X px on the bottom of the element.<br>
+					.mX-l : provide a margin of X px on the left of the element.<br>
+					.mX-tb : provide a margin of X px on top and bottom of the element.<br>
+					.mX-rl : provide a margin of X px on the right and left of the element.<br>
+				</p>
+
+				<p class="f-bold">
+					Details:<br>
+				</p>
+
+				<p>
+					.m0 {margin:0px;}<br>
+					.m0-t {margin-top:0px;}<br>
+					.m0-r {margin-right:0px;}<br>
+					.m0-b {margin-bottom:0px;}<br>
+					.m0-l {margin-left:0px;}<br>
+					.m0-tb {margin-top:0px;margin-bottom:0px;}<br>
+					.m0-rl {margin-right:0px;margin-left:0px;}<br>
+					.m1 {margin:1px;}<br>
+					.m1-t {margin-top:1px;}<br>
+					.m1-r {margin-right:1px;}<br>
+					.m1-b {margin-bottom:1px;}<br>
+					.m1-l {margin-left:1px;}<br>
+					.m1-tb {margin-top:1px;margin-bottom:1px;}<br>
+					.m1-rl {margin-right:1px;margin-left:1px;}<br>
+					.m2 {margin:2px;}<br>
+					.m2-t {margin-top:2px;}<br>
+					.m2-r {margin-right:2px;}<br>
+					.m2-b {margin-bottom:2px;}<br>
+					.m2-l {margin-left:2px;}<br>
+					.m2-tb {margin-top:2px;margin-bottom:2px;}<br>
+					.m2-rl {margin-right:2px;margin-left:2px;}<br>
+					.m3 {margin:3px;}<br>
+					.m3-t {margin-top:3px;}<br>
+					.m3-r {margin-right:3px;}<br>
+					.m3-b {margin-bottom:3px;}<br>
+					.m3-l {margin-left:3px;}<br>
+					.m3-tb {margin-top:3px;margin-bottom:3px;}<br>
+					.m3-rl {margin-right:3px;margin-left:3px;}<br>
+					.m5 {margin:5px;}<br>
+					.m5-t {margin-top:5px;}<br>
+					.m5-r {margin-right:5px;}<br>
+					.m5-b {margin-bottom:5px;}<br>
+					.m5-l {margin-left:5px;}<br>
+					.m5-tb {margin-top:5px;margin-bottom:5px;}<br>
+					.m5-rl {margin-right:5px;margin-left:5px;}<br>
+					.m8 {margin:8px;}<br>
+					.m8-t {margin-top:8px;}<br>
+					.m8-r {margin-right:8px;}<br>
+					.m8-b {margin-bottom:8px;}<br>
+					.m8-l {margin-left:8px;}<br>
+					.m8-tb {margin-top:8px;margin-bottom:8px;}<br>
+					.m8-rl {margin-right:8px;margin-left:8px;}<br>
+					.m13 {margin:13px;}<br>
+					.m13-t {margin-top:13px;}<br>
+					.m13-r {margin-right:13px;}<br>
+					.m13-b {margin-bottom:13px;}<br>
+					.m13-l {margin-left:13px;}<br>
+					.m13-tb {margin-top:13px;margin-bottom:13px;}<br>
+					.m13-rl {margin-right:13px;margin-left:13px;}<br>
+					.m21 {margin:21px;}<br>
+					.m21-t {margin-top:21px;}<br>
+					.m21-r {margin-right:21px;}<br>
+					.m21-b {margin-bottom:21px;}<br>
+					.m21-l {margin-left:21px;}<br>
+					.m21-tb {margin-top:21px;margin-bottom:21px;}<br>
+					.m21-rl {margin-right:21px;margin-left:21px;}<br>
+					.m34 {margin:34px;}<br>
+					.m34-t {margin-top:34px;}<br>
+					.m34-r {margin-right:34px;}<br>
+					.m34-b {margin-bottom:34px;}<br>
+					.m34-l {margin-left:34px;}<br>
+					.m34-tb {margin-top:34px;margin-bottom:34px;}<br>
+					.m34-rl {margin-right:34px;margin-left:34px;}<br>
+					.m55 {margin:55px;}<br>
+					.m55-t {margin-top:55px;}<br>
+					.m55-r {margin-right:55px;}<br>
+					.m55-b {margin-bottom:55px;}<br>
+					.m55-l {margin-left:55px;}<br>
+					.m55-tb {margin-top:55px;margin-bottom:55px;}<br>
+					.m55-rl {margin-right:55px;margin-left:55px;}<br>
+					.m89 {margin:89px;}<br>
+					.m89-t {margin-top:89px;}<br>
+					.m89-r {margin-right:89px;}<br>
+					.m89-b {margin-bottom:89px;}<br>
+					.m89-l {margin-left:89px;}<br>
+					.m89-tb {margin-top:89px;margin-bottom:89px;}<br>
+					.m89-rl {margin-right:89px;margin-left:89px;}<br>
+					.m144 {margin:144px;}<br>
+					.m144-t {margin-top:144px;}<br>
+					.m144-r {margin-right:144px;}<br>
+					.m144-b {margin-bottom:144px;}<br>
+					.m144-l {margin-left:144px;}<br>
+					.m144-tb {margin-top:144px;margin-bottom:144px;}<br>
+					.m144-rl {margin-right:144px;margin-left:144px;}<br>
+					.m233 {margin:233px;}<br>
+					.m233-t {margin-top:233px;}<br>
+					.m233-r {margin-right:233px;}<br>
+					.m233-b {margin-bottom:233px;}<br>
+					.m233-l {margin-left:233px;}<br>
+					.m233-tb {margin-top:233px;margin-bottom:233px;}<br>
+					.m233-rl {margin-right:233px;margin-left:233px;}<br>
+				</p>
+
+				<p class="f-bold t-red">Padding</p>
+
+				<p>
+					<div class="b-gray p13 m13-b">
+						<strong>Classes</strong>: .pX, .pX-t, .pX-r, .pX-b, .pX-l, .pX-tb, .pX-rl<br>
+						<strong>Sizes</strong>: Replace 'X' with one of this numebers: 0,1,2,3,5,8,13,21,34,55,89,144,233.<br>
+					</div>
+				</p>
+
+				<p class="f-bold">
+					Description:<br>
+				</p>
+				<p>
+					.pX : provide a padding of X px on every side (top,right,bottom,left) of the element.<br>
+					.pX : provide a padding of X px on every side (top,right,bottom,left) of the element.<br>
+					.pX-t : provide a padding of X px on the top of the element.<br>
+					.pX-r : provide a padding of X px on the right of the element.<br>
+					.pX-b : provide a padding of X px on the bottom of the element.<br>
+					.pX-l : provide a padding of X px on the left of the element.<br>
+					.pX-tb : provide a padding of X px on top and bottom of the element.<br>
+					.pX-rl : provide a padding of X px on the right and left of the element.<br>
+				</p>
+
+				<p class="f-bold">
+					Details:<br>
+				</p>
+				<p>
+					.p0 {padding:0px;}<br>
+					.p0-t {padding-top:0px;}<br>
+					.p0-r {padding-right:0px;}<br>
+					.p0-b {padding-bottom:0px;}<br>
+					.p0-l {padding-left:0px;}<br>
+					.p0-tb {padding-top:0px;padding-bottom:0px;}<br>
+					.p0-rl {padding-right:0px;padding-left:0px;}<br>
+					.p1 {padding:1px;}<br>
+					.p1-t {padding-top:1px;}<br>
+					.p1-r {padding-right:1px;}<br>
+					.p1-b {padding-bottom:1px;}<br>
+					.p1-l {padding-left:1px;}<br>
+					.p1-tb {padding-top:1px;padding-bottom:1px;}<br>
+					.p1-rl {padding-right:1px;padding-left:1px;}<br>
+					.p2 {padding:2px;}<br>
+					.p2-t {padding-top:2px;}<br>
+					.p2-r {padding-right:2px;}<br>
+					.p2-b {padding-bottom:2px;}<br>
+					.p2-l {padding-left:2px;}<br>
+					.p2-tb {padding-top:2px;padding-bottom:2px;}<br>
+					.p2-rl {padding-right:2px;padding-left:2px;}<br>
+					.p3 {padding:3px;}<br>
+					.p3-t {padding-top:3px;}<br>
+					.p3-r {padding-right:3px;}<br>
+					.p3-b {padding-bottom:3px;}<br>
+					.p3-l {padding-left:3px;}<br>
+					.p3-tb {padding-top:3px;padding-bottom:3px;}<br>
+					.p3-rl {padding-right:3px;padding-left:3px;}<br>
+					.p5 {padding:5px;}<br>
+					.p5-t {padding-top:5px;}<br>
+					.p5-r {padding-right:5px;}<br>
+					.p5-b {padding-bottom:5px;}<br>
+					.p5-l {padding-left:5px;}<br>
+					.p5-tb {padding-top:5px;padding-bottom:5px;}<br>
+					.p5-rl {padding-right:5px;padding-left:5px;}<br>
+					.p8 {padding:8px;}<br>
+					.p8-t {padding-top:8px;}<br>
+					.p8-r {padding-right:8px;}<br>
+					.p8-b {padding-bottom:8px;}<br>
+					.p8-l {padding-left:8px;}<br>
+					.p8-tb {padding-top:8px;padding-bottom:8px;}<br>
+					.p8-rl {padding-right:8px;padding-left:8px;}<br>
+					.p13 {padding:13px;}<br>
+					.p13-t {padding-top:13px;}<br>
+					.p13-r {padding-right:13px;}<br>
+					.p13-b {padding-bottom:13px;}<br>
+					.p13-l {padding-left:13px;}<br>
+					.p13-tb {padding-top:13px;padding-bottom:13px;}<br>
+					.p13-rl {padding-right:13px;padding-left:13px;}<br>
+					.p21 {padding:21px;}<br>
+					.p21-t {padding-top:21px;}<br>
+					.p21-r {padding-right:21px;}<br>
+					.p21-b {padding-bottom:21px;}<br>
+					.p21-l {padding-left:21px;}<br>
+					.p21-tb {padding-top:21px;padding-bottom:21px;}<br>
+					.p21-rl {padding-right:21px;padding-left:21px;}<br>
+					.p34 {padding:34px;}<br>
+					.p34-t {padding-top:34px;}<br>
+					.p34-r {padding-right:34px;}<br>
+					.p34-b {padding-bottom:34px;}<br>
+					.p34-l {padding-left:34px;}<br>
+					.p34-tb {padding-top:34px;padding-bottom:34px;}<br>
+					.p34-rl {padding-right:34px;padding-left:34px;}<br>
+					.p55 {padding:55px;}<br>
+					.p55-t {padding-top:55px;}<br>
+					.p55-r {padding-right:55px;}<br>
+					.p55-b {padding-bottom:55px;}<br>
+					.p55-l {padding-left:55px;}<br>
+					.p55-tb {padding-top:55px;padding-bottom:55px;}<br>
+					.p55-rl {padding-right:55px;padding-left:55px;}<br>
+					.p89 {padding:89px;}<br>
+					.p89-t {padding-top:89px;}<br>
+					.p89-r {padding-right:89px;}<br>
+					.p89-b {padding-bottom:89px;}<br>
+					.p89-l {padding-left:89px;}<br>
+					.p89-tb {padding-top:89px;padding-bottom:89px;}<br>
+					.p89-rl {padding-right:89px;padding-left:89px;}<br>
+					.p144 {padding:144px;}<br>
+					.p144-t {padding-top:144px;}<br>
+					.p144-r {padding-right:144px;}<br>
+					.p144-b {padding-bottom:144px;}<br>
+					.p144-l {padding-left:144px;}<br>
+					.p144-tb {padding-top:144px;padding-bottom:144px;}<br>
+					.p144-rl {padding-right:144px;padding-left:144px;}<br>
+					.p233 {padding:233px;}<br>
+					.p233-t {padding-top:233px;}<br>
+					.p233-r {padding-right:233px;}<br>
+					.p233-b {padding-bottom:233px;}<br>
+					.p233-l {padding-left:233px;}<br>
+					.p233-tb {padding-top:233px;padding-bottom:233px;}<br>
+					.p233-rl {padding-right:233px;padding-left:233px;}<br>
+				</p>
+
+				<p class="f-bold t-red">Fonts</p>
+
+				<p>
+					<div class="b-gray p13 m13-b">
+						<strong>Classes</strong>: .f-size-1-title, .f-size-1-big, .f-size-1-normal, .f-size-1-small, .f-size-2-title, .f-size-2-big,.f-size-2-normal, .f-size-2-small, .f-size-3-title, .f-size-3-big, .f-size-3-normal, .f-size-3-small.
+					</div>
+				</p>
+
+				<p class="f-bold">
+					Description:<br>
+				</p>
+				<p>
+					Provides predetermined font sizes. Every set of fonts (1,2,3) provides three dimensions title, big, normal, small.<br>
+					There are also two classes to set the font-weight property.<br>
+					In these font classes I use the phi number (golden ratio) instead the Fibonacci numbers because it's not easy to apply that numbers to a readable size.
+				</p>
+
+				<p class="f-bold">
+					Details:<br>
+				</p>
+				<p>
+					.f-size-1-title {font-size:42px;line-height:47px;}<br>
+					.f-size-1-big {font-size:26px;line-height:31px;}<br>
+					.f-size-1-normal {font-size:16px;line-height:21px;}<br>
+					.f-size-1-small {font-size:13px;line-height:18px;}<br><br>
+					.f-size-2-title {font-size:37;line-height:42px;}<br>
+					.f-size-2-big {font-size:23px;line-height:28px;}<br>
+					.f-size-2-normal {font-size:14px;line-height:19px;}<br>
+					.f-size-2-small {font-size:12px;line-height:17px;}<br><br>
+					.f-size-3-title {font-size:47;line-height:52px;}<br>
+					.f-size-3-big {font-size:29px;line-height:34px;}<br>
+					.f-size-3-normal {font-size:18px;line-height:23px;}<br>
+					.f-size-3-small {font-size:15px;line-height:20px;}
+				</p>
+				<p>
+					.f-bold {font-weight:bold;}<br>
+					.f-normal {font-weight:normal;}<br>
+				</p>
+
+				<p class="f-bold t-red">Headers and paragraphs</p>
+
+				<p>
+					<div class="b-gray p13 m13-b">
+						<strong>Tags</strong>: h1, h2 , h3, h4, h5, h6 and p
+					</div>
+				</p>
+
+				<p class="f-bold">
+					Description:<br>
+				</p>
+				<p>
+					All headers and paragraphs will have a default Fibonacci bottom space.<br>
+				</p>
+
+				<p class="f-bold">
+					Details:<br>
+				</p>
+				<p>
+					h1, h2, h3, h4, h5, h6 {margin:0 0 21px 0;}<br>
+					p {margin:0 0 13px 0;}
+				</p>
+
+				<p class="f-bold f-size-1-big m34-tb">Generic classes</p>
+
+				<p>
+					The following classes are not based on the Fibonacci Sequence but they can be useful on development.<br>
+					You can remove them if you just need the Fibonacci classes.
+				</p>
+
+				<p class="f-bold t-red">Background:</p>
+
+				<p>
+					<div class="b-gray p13 m13-b">
+						<strong>Classes</strong>: .b-black, .b-blu, .b-fuxia, .b-gray, .b-green, .b-orange, .b-red, .b-white, .b-yellow
+					</div>
+				</p>
+
+				<p class="f-bold">
+					Description:<br>
+				</p>
+				<p>
+					Common colors to use as a background.
+				</p>
+
+				<p class="f-bold">
+					Details:<br>
+				</p>
+				<p>
+					.b-black {background:#000000;}<br>
+					.b-blu {background:#0000cc;}<br>
+					.b-fuxia {background:#cc00cc;}<br>
+					.b-gray {background:#f0f0f0;}<br>
+					.b-green {background:#55cc55;}<br>
+					.b-orange {background:#ffc107;}<br>
+					.b-red {background:#cc0000;}<br>
+					.b-white {background:#ffffff;}<br>
+					.b-yellow {background:#cccc00;}<br>
+				</p>
+
+				<p class="f-bold t-red">Text alignment & colors:</p>
+
+				<p>
+					<div class="b-gray p13 m13-b">
+						<strong>Classes</strong>:<br>
+						.t-center, .t-left, .t-right<br>
+						.t-black, .t-blu, .t-fuxia, .t-gray, .t-green, .t-orange, .t-red, .t-white, .t-yellow
+
+					</div>
+				</p>
+
+				<p class="f-bold">
+					Description:<br>
+				</p>
+				<p>
+					Classes for text alignment and color.
+				</p>
+
+				<p class="f-bold">
+					Details:<br>
+				</p>
+				<p>
+					.t-center {text-align:center;}<br>
+					.t-left {text-align:left !important;}<br>
+					.t-right {text-align:right !important;}<br>
+				</p>
+				<p>
+					.t-black {color:#000000;}<br>
+					.t-blu {color:#0000cc;}<br>
+					.t-fuxia {color:#cc00cc;}<br>
+					.t-gray {color:#f0f0f0;}<br>
+					.t-green {color:#55cc55;}<br>
+					.t-orange {color:#ffc107;}<br>
+					.t-red {color:#cc0000;}<br>
+					.t-white {color:#ffffff;}<br>
+					.t-yellow {color:#cccc00;}<br>
+				</p>
+
+				<p class="f-bold t-red">Display property:</p>
+
+				<p>
+					<div class="b-gray p13 m13-b">
+						<strong>Classes</strong>: .d-block, .d-inline, .d-inline-block, .d-none
+					</div>
+				</p>
+
+				<p class="f-bold">
+					Description:<br>
+				</p>
+				<p>
+					Classes for using the display property.
+				</p>
+
+				<p class="f-bold">
+					Details:<br>
+				</p>
+				<p>
+					.d-block {display:block;}<br>
+					.d-inline {display:inline;}<br>
+					.d-inline-block {display:inline-block;}<br>
+					.d-none {display:none;}<br>
+				</p>
+
+				<p class="f-bold t-red">Float:</p>
+
+				<p>
+					<div class="b-gray p13 m13-b">
+						<strong>Classes</strong>: .f-left, .f-right
+					</div>
+				</p>
+
+				<p class="f-bold">
+					Description:<br>
+				</p>
+				<p>
+					Classes for using the float property.
+				</p>
+
+				<p class="f-bold">
+					Details:<br>
+				</p>
+				<p>
+					.f-left {float:left;}<br>
+					.f-right {float:right;}<br>
+				</p>
+
+				<p class="f-bold t-red">Make responsive an embed video:</p>
+
+				<p>
+					<div class="b-gray p13 m13-b">
+						<strong>Classes</strong>: .video-responsive
+					</div>
+				</p>
+
+				<p class="f-bold">
+					Description:<br>
+				</p>
+				<p>
+					This class makes responsive an embed video (for example from youtube)<br>
+					How to use it:<br>
+					&lt; div class="video-responsive" &gt; your iframe embed code &lt; / div &gt;
+				</p>
+
+				<p class="f-bold">
+					Details:<br>
+				</p>
+				<p>
+					.video-responsive {position: relative;width: 100%;height: 0;padding-bottom: 51%;}<br>
+					.video-responsive iframe {position: absolute;width: 100%;height: 100%;left:0;top:0;}
+				</p>
+
+				<p class="f-bold t-red">Responsive textarea:</p>
+
+				<p>
+					<div class="b-gray p13 m13-b">
+						<strong>Classes</strong>: .form-control
+					</div>
+				</p>
+
+				<p class="f-bold">
+					Description:<br>
+				</p>
+				<p>
+					This class make an element 100% width till 610px screen width and then the element will have 610px width.<br>
+					How to use it:<br>
+					&lt; input type="text" class="form-control" / &gt;
+				</p>
+
+				<p class="f-bold">
+					Details:<br>
+				</p>
+				<p>
+					@media(max-width:610px){<br>
+						.form-control {max-width:100%;}<br>
+						.form-control textarea {width:100%; height:144px;}<br>
+					}<br>
+					@media(min-width:610px){<br>
+						.form-control {max-width:610px;}<br>
+						.form-control textarea {width:100%; height:233px;}<br>
+					}<br>
+				</p>
+
+			</div>
+
+			<div class="d-block">
+
+				<a name="changelog"></a>
+				<h1 class="f-size-1-big m34-tb" name="changelog">CHANGELOG <span class="small f-size-1-small">(<a href="#top">Top</a>)</span></h1>
+
+				<p class="f-bold f-size-1-big m34-tb">V. 3.0</p>
+				<p>
+					<ul>
+						<li>Now Fiss is under MIT License.</li>
+					</ul>
+				</p>
+
+				<p class="f-bold f-size-1-big m34-tb">V. 2.3</p>
+				<p>
+					<ul>
+						<li>Orange color changed from #ffc107 to #ff6600.</li>
+						<li>
+							The font size series have new names and a new series of sizes:<br>
+							Old:<br>
+							.f-size-1a, .f-size-1b, .f-size-1c<br>
+							.f-size-2a, .f-size-2b, .f-size-2c<br>
+							.f-size-3a, .f-size-3b, .f-size-3c<br>
+							New:<br>
+							.f-size-1-title, .f-size-1-big, .f-size-1-normal, .f-size-1-small<br>
+							.f-size-2-title, .f-size-2-big, .f-size-2-normal, .f-size-2-small<br>
+							.f-size-3-title, .f-size-3-big, .f-size-3-normal, .f-size-3-small
+						</li>
+					</ul>
+				</p>
+
+				<p class="f-bold f-size-1-big m34-tb">V. 2.2</p>
+				<p>
+					<ul>
+						<li>h1, h2, h3, h4, h5 and h6 have a new margin bottom measure: 21px instead of 34px (the same of the p tag).</li>
+					</ul>
+				</p>
+
+			<div class="d-block">
+
+				<p class="license m34-t m55b p34-t f-size-1-small">
+					FiSS - Copyright 2019-2020 <a href="https://matteobersani.com">Matteo Giuseppe Bersani</a><br>
+					<a href="https://opensource.org/licenses/MIT">MIT Licenses</a>.
+				</p>
+
+			</div>
+
+		</div>
+		
+	</body>
+	
+</html>
